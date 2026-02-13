@@ -1,36 +1,50 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 📖 VerseBoard – Drag & Drop Bible Verse Organizer
 
-## Getting Started
+VerseBoard is a drag-and-drop Bible application that allows users to organize Scripture into meaningful life categories such as Peace, Hope, Strength, and Evangelism.
 
-First, run the development server:
+This app is designed to combine spiritual reflection with modern UI interaction.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## ✨ Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Drag-and-drop Bible verses between categories
+- Categories focused on real-world struggles:
+  - Peace & Trust
+  - Love & Relationships
+  - Hope & Encouragement
+  - Forgiveness & Healing
+  - Wisdom & Guidance
+  - Strength & Courage
+  - Sharing the Gospel
+  - Thankfulness & Joy
+- Search verses by keyword
+- Tag-based filtering (anxiety, faith, hope, etc.)
+- Local storage persistence
+- Responsive design
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## 🛠️ Tech Stack
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- React
+- Tailwind CSS
+- dnd-kit (Drag and Drop)
+- LocalStorage (MVP)
+- Firebase (planned)
 
-## Learn More
+## 🎯 Purpose
 
-To learn more about Next.js, take a look at the following resources:
+This project explores how technology can support:
+- Personal spiritual growth
+- Biblical reflection
+- Evangelism encouragement
+- Scripture organization based on real-life struggles
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🚀 Future Enhancements
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- User authentication
+- Cloud syncing
+- Verse notes & journaling
+- Verse of the Day automation
+- Shareable devotional exports
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Built with intentional design and real-world problem solving in mind.
