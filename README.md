@@ -1,6 +1,6 @@
-# 📖 VerseBoard – Drag & Drop Bible Verse Organizer
+# 📖 Echo – Drag & Drop Bible Verse Organizer
 
-VerseBoard is a drag-and-drop Bible application that allows users to organize Scripture into meaningful life categories such as Peace, Hope, Strength, and Evangelism.
+Echo is a drag-and-drop Bible application that allows users to organize Scripture into meaningful life categories such as Peace, Hope, Strength, and Evangelism.
 
 This app is designed to combine spiritual reflection with modern UI interaction.
 
