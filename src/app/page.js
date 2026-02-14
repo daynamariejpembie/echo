@@ -14,6 +14,17 @@ export default function Home() {
     strength: []
   });
 
+  useEffect(() => {
+    const savedBoards = localStorage.getItem("boards");
+    if (savedBoards) {
+      setBoards(JSON.parse(savedBoards));
+    }
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem("boards", JSON.stringify(boards));
+  }, [boards]);
+
   const findBoard = (id) => {
     return Object.keys(boards).find((key) =>
       boards[key].includes(id)
@@ -56,6 +67,10 @@ export default function Home() {
         [sourceBoard]: sourceItems,
         [targetBoard]: targetItems
       });
+
+      if (!boards[targetBoard].includes(activeId)) {
+        targetItems.push(activeId);
+      }
     }
   };
 
