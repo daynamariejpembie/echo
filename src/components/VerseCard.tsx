@@ -4,7 +4,11 @@ import { useSortable } from "@dnd-kit/sortable";
 import { CSS } from "@dnd-kit/utilities";
 import { verses } from "../data/verses";
 
-export default function VerseCard({ id }) {
+type VerseCardProps = {
+    id: string;
+};
+
+export default function VerseCard({ id }: VerseCardProps) {
     const verse = verses.find((v) => v.id === id);
 
     if (!verse) return null;
@@ -24,6 +28,7 @@ export default function VerseCard({ id }) {
 
     return (
         <div
+
           ref={setNodeRef}
           style={style}
           {...attributes}
