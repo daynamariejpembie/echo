@@ -4,7 +4,14 @@ import { useDroppable } from "@dnd-kit/core";
 import { SortableContext, verticalListSortingStrategy } from "@dnd-kit/sortable";
 import VerseCard from "./VerseCard";
 
-export default function CategoryBoard({id, title, items}) {
+type Props = {
+  id: string;
+  title: string;
+  items: string[];
+  verseMap: Record <string, any>;
+};
+
+export default function CategoryBoard({ id, title, items, verseMap }: Props) {
     const { setNodeRef } = useDroppable({id});
 
     return (
@@ -13,9 +20,20 @@ export default function CategoryBoard({id, title, items}) {
 
             <div ref={setNodeRef} className="min-h-37.5 space-y-3">
               <SortableContext items={items} strategy={verticalListSortingStrategy}>
-                {items.map((itemId) => (
-                  <VerseCard key={itemId} id={itemId} />
-                ))}
+                {items.map((itemId) => {
+                
+                const verse = verseMap[itemId];
+
+                if (!verse) return null;
+                
+                return (
+                  <VerseCard 
+                  key={itemId} 
+                  id={itemId} 
+                  verse={verseMap[itemId]}
+                  />
+                );
+                })}
 
               </SortableContext>
             </div>

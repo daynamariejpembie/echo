@@ -2,14 +2,13 @@
 
 import { useSortable } from "@dnd-kit/sortable";
 import { CSS } from "@dnd-kit/utilities";
-import { verses } from "../data/verses";
 
 type VerseCardProps = {
     id: string;
+    verse: FetchedVerse;
 };
 
-export default function VerseCard({ id }: VerseCardProps) {
-    const verse = verses.find((v) => v.id === id);
+export default function VerseCard({ id, verse }: VerseCardProps) {
 
     if (!verse) return null;
 
