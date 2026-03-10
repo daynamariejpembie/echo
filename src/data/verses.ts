@@ -1,4 +1,10 @@
-export const verses = [
+export type Verse = {
+    id: string;
+    reference: string;
+    text: string;
+};
+
+export const verses: Verse[] = [
     {
         id: "john316",
         reference: "John 3:16",
